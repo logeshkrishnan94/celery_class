@@ -7,7 +7,7 @@ image_size = (180, 180)
 batch_size = 32
 
 train_ds = tf.keras.preprocessing.image_dataset_from_directory(
-    "/home/ignitarium/Downloads/PetImages",
+    "Data/PetImages",
     validation_split=0.2,
     subset="training",
     seed=1337,
@@ -15,7 +15,7 @@ train_ds = tf.keras.preprocessing.image_dataset_from_directory(
     batch_size=batch_size,
 )
 val_ds = tf.keras.preprocessing.image_dataset_from_directory(
-    "/home/ignitarium/Downloads/PetImages",
+    "Data/PetImages",
     validation_split=0.2,
     subset="validation",
     seed=1337,
